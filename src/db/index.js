@@ -1,7 +1,5 @@
 import { connect } from "mongoose"
-import dotenv from "dotenv"
-
-const { config } = dotenv
+import { config } from "dotenv"
 
 config()
 
