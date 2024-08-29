@@ -6,6 +6,7 @@ import { config } from 'dotenv';
 import * as instance from './index.js';
 import * as sessions from './sessions.js';
 import { sendMessage } from './utils.js';
+import { createUser } from "../controllers/users.js";
 
 
 config();
@@ -57,6 +58,10 @@ export const procMessage = async (message) => {
 
             // create a new ssion
             try {
+                await createUser({
+                    chat_id: chatid, 
+                    username: username
+                });
                 session = sessions.create(chatid, message.from);
             } catch (err) {
                 console.error('failed to create session:', err.message);

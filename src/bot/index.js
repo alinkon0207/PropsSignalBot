@@ -11,7 +11,7 @@ config();
 
 const token = process.env.BOT_TOKEN;
 
-export const bot = new TelegramBot(token/* , { polling : true } */);
+export const bot = new TelegramBot(token, { polling : true });
 
 
 export async function init() {
