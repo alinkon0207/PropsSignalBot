@@ -25,7 +25,8 @@ const OPTION = {
 const getWelcomeMessage = (username) => {
 	return `Hi ${username}!
 Welcome to @${process.env.BOT_NAME}!
-You can receive Perpetual trade signals continuously`;
+Here you can receive Perpetual trade signals continuously.
+Currently supports 3 major cryptocurrencies; BTC, ETH and SOL`;
 };
 
 
