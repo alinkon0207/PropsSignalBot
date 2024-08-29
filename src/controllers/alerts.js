@@ -4,7 +4,7 @@ import { sendMessage } from "../bot/utils.js";
 
 
 export const broadcastAlert = async (data) => {
-    const msg = `${data.trade} -- ${data.baseToken}/${data.quoteToken} -- $${data.price} @${new Date()}`;
+    const msg = `${data.trade} -- ${data.baseToken}/${data.quoteToken} -- $${data.price} @${(new Date()).toUTCString()}`;
     // console.log('Message to send:', msg);
 
     try {
