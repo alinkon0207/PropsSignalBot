@@ -28,7 +28,7 @@ const fetchETHPrice = async () => {
         const response = await axios.get('https://api.coinbase.com/v2/prices/ETH-USD/spot');
         // console.log('response.data:', response.data);
 
-        const newEthPrice = Number(response.data.price);
+        const newEthPrice = Number(response.data.data.amount);
         prices.set('ETH', newEthPrice);
 
         // console.log('ETH Price in USD:', ethPrice, Date.now() / 1000);
