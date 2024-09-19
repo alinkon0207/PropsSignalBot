@@ -23,10 +23,9 @@ const OPTION = {
 
 // Messages
 const getWelcomeMessage = (username) => {
-	return `Hi ${username}!
-Welcome to @${process.env.BOT_NAME}!
-Here you can receive Perpetual trade signals continuously.
-Currently supports 3 major cryptocurrencies; BTC, ETH and SOL`;
+	return `Welcome to @${process.env.BOT_NAME}!
+
+Supercharge your trading with AI-backed signals for BTC, ETH, and SOL. Get real-time insights with precise entry points, stop losses, and profit targets.`;
 };
 
 

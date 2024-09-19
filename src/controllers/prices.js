@@ -25,7 +25,7 @@ const fetchBTCPrice = async () => {
 
 const fetchETHPrice = async () => {
     try {
-        const response = await axios.get('https://api.pro.coinbase.com/products/ETH-USD/ticker');
+        const response = await axios.get('https://api.coinbase.com/v2/prices/ETH-USD/spot');
         // console.log('response.data:', response.data);
 
         const newEthPrice = Number(response.data.price);
