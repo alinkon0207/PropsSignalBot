@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/alert-hook', alert_hook);
 
-const port = process.env.PORT | 4500;
+const port = process.env.PORT || 4500;
 app.listen(port, async () => {
     console.log(`Server is running on port ${port}`);
     await connectDB();
